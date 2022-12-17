@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/nikolai
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://nikolai.fyi
+  * I am nikolai (https://keybase.io/nikolai) on keybase.
+  * I have a public key ASBCXhVb_4OE12mjZPHINCidtmjNZmEJohi9rEm-mojHBAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120e87d4d3567f477aeb135e19f215d6ed2a1894397c4e782eadd53ae822e2ff0d10a",
+      "host": "keybase.io",
+      "kid": "0120425e155bff8384d769a364f1c834289db668cd666109a218bdac49be9a88c7040a",
+      "uid": "ba5f015bda4c06b9a1be0f2b7f96fe19",
+      "username": "nikolai"
+    },
+    "merkle_root": {
+      "ctime": 1554907558,
+      "hash": "83d67dd15339aefc005c62ec67f9715c64456d13123847e774087c91eee48db53ea29fd7b46da23093a00074827c7a431db4c95865026b07a1917f6067234b2b",
+      "hash_meta": "d74694055e96f33a3054385d04e12c2556ffd96ffcdcce55d11c04cec813b3c3",
+      "seqno": 5135173
+    },
+    "service": {
+      "entropy": "9HnI2Lm5kb3fQqRaAf580k5t",
+      "hostname": "nikolai.fyi",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "3.1.2"
+  },
+  "ctime": 1554907565,
+  "expire_in": 504576000,
+  "prev": "2e9b80cafe818cbb8b729c67fa962b2bff09bd219b83e56e1f4fd00415caabf4",
+  "seqno": 105,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgQl4VW/+DhNdpo2TxyDQonbZozWZhCaIYvaxJvpqIxwQKp3BheWxvYWTESpcCacQgLpuAyv6BjLuLcpxn+pYrK/8JvSGbg+VuH0/QBBXKq/TEIEjb5qfSnzZcb4J7+G0QDugTsVmBgnCM2E/73NfOJRwQAgHCo3NpZ8RAFpaPIbZ0OIBZBC12p2896AwjL2i/wRpm5f0tD0jotGCUJQYoPWzLekZr/yZjfJgicbN7wTrS3aPUyIX7egYQAKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEINf9uy4FrOFD5H8LNcQwY5b9He19DAcAP4jhzds3SNu9o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/nikolai
+
+==================================================================

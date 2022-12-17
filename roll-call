@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app203.us.archive.org';v.server_ms=5132;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("https://nikolai.fyi/roll-call/","20201107232510","http://web.archive.org/","web","/_static/",
+	      "1604791510");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>MKR Roll Call | roll-call</title>
+<meta name="generator" content="Jekyll v3.7.4"/>
+<meta property="og:title" content="MKR Roll Call"/>
+<meta property="og:locale" content="en_US"/>
+<meta name="description" content="MKR Voter Roll Call"/>
+<meta property="og:description" content="MKR Voter Roll Call"/>
+<link rel="canonical" href="http://web.archive.org/web/20201107232510/https://nmushegian.github.io/roll-call/"/>
+<meta property="og:url" content="http://web.archive.org/web/20201107232510/https://nmushegian.github.io/roll-call/"/>
+<meta property="og:site_name" content="roll-call"/>
+<script type="application/ld+json">
+{"@type":"WebSite","url":"http://web.archive.org/web/20201107232510/https://nmushegian.github.io/roll-call/","name":"roll-call","headline":"MKR Roll Call","description":"MKR Voter Roll Call","@context":"http://web.archive.org/web/20201107232510/http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/web/20201107232510cs_/https://nikolai.fyi/roll-call/assets/css/style.css?v=5970346c28443a76c3266945401bfc7fe54148ab">
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="http://web.archive.org/web/20201107232510/https://nmushegian.github.io/roll-call/">roll-call</a></h1>
+      
+
+      <h1 id="mkr-roll-call">MKR Roll Call</h1>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|\  /| now or
+| \/ |  never
+</code></pre></div></div>
+
+<h3 id="what">What?</h3>
+<ul>
+  <li>At <strong>16:00 UTC on April 11, 2019</strong>, there will be an MKR voter “snapshot” to collect a list of voting addresses.</li>
+  <li>You can set your MKR to vote any time before the snapshot, just be sure to leave it there until April 11th, 16:00 UTC (the first block after this timestamp).</li>
+  <li>This is optional, but recommended. Consider this the notice to MKR holders that voting has started in earnest. You also get a fun prize:</li>
+  <li>You will get to etch a small section of a <a href="http://web.archive.org/web/20201107232510/https://nmushegian.github.io/slab-of-art/">slab of ASCII art</a>, which will be permanently embedded into the MCD contract.</li>
+</ul>
+
+<h3 id="how">How?</h3>
+<ul>
+  <li>Anyone who is voting for <strong>any proposals</strong> (any non-empty slate) at 2019/4/11 16:00:00 UTC will be counted as present.</li>
+  <li>We will manually assemble representative addresses for each voter (for example, if you use the VoteProxy contract, we’ll take it’s “voting key”), then collect signed messages for your section of art.</li>
+</ul>
+
+<h2 id="voteproxy-contract-at-votemakerdaocom">VoteProxy contract at vote.makerdao.com</h2>
+
+<p>You can use the <a href="http://web.archive.org/web/20201107232510/https://vote.makerdao.com/">vote.makerdao.com</a> GUI to vote on the current stability fee proposal (the one that ends on April 11th at 16:00 UTC). Just be sure your MKR is <code class="highlighter-rouge">lock</code>ed and <code class="highlighter-rouge">vote</code>ing until that time.</p>
+
+<h2 id="direct-voting---metamask--hardware-wallet">Direct Voting - Metamask + Hardware Wallet</h2>
+
+<h4 id="redeem-your-old-mkr-if-you-havent-already">Redeem your old MKR, if you haven’t already.</h4>
+
+<p>There is a GUI available at <a href="http://web.archive.org/web/20201107232510/https://makerdao.com/redeem">makerdao.com/redeem</a></p>
+
+<p>You can use <a href="0x642ae78fafbb8032da552d619ad43f1d81e4dd7c">etherscan for the generic redeemer UI</a>, but the old MKR token cannot be verified due to its archaic source code.</p>
+
+<p>If you use the GUI, be sure to still verify the transactions.</p>
+
+<ol>
+  <li><code class="highlighter-rouge">oldMkr.approve(redeemer, balance);</code></li>
+  <li><code class="highlighter-rouge">redeemer.redeem(balance);</code></li>
+</ol>
+
+<h3 id="voting-with-chief">Voting with <a href="http://web.archive.org/web/20201107232510/https://etherscan.io/address/0x8e2a84d6ade1e7fffee039a35ef5f19f13057152">Chief</a></h3>
+
+<p><a href="http://web.archive.org/web/20201107232510/https://etherscan.io/address/0x8e2a84d6ade1e7fffee039a35ef5f19f13057152#writeContract">Etherscan Chief GUI</a></p>
+
+<p><a href="http://web.archive.org/web/20201107232510/https://chief.makerdao.com/">Custom GUI</a></p>
+
+<p>Whether you use etherscan, or the chief.makerdao GUI, be sure you still verify the generated transactions:</p>
+
+<h4 id="approve-the-chief-to-spend-your-mkr-and-your-mkr-ious-while-youre-at-it">Approve the Chief to spend your MKR (and your “MKR IOU”s, while you’re at it).</h4>
+
+<ol>
+  <li><code class="highlighter-rouge">mkr.approve(chief, max_u256);</code></li>
+  <li><code class="highlighter-rouge">iou.approve(chief, max_u256);</code></li>
+</ol>
+
+<p><a href="http://web.archive.org/web/20201107232510/https://etherscan.io/address/0x9aed7a25f2d928225e6fb2388055c7363ad6727b#writeContract">IOU approval</a></p>
+
+<p><a href="http://web.archive.org/web/20201107232510/https://etherscan.io/address/0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2#writeContract">GOV approval</a></p>
+
+<h4 id="lock-your-mkr"><code class="highlighter-rouge">lock</code> your MKR:</h4>
+
+<ol>
+  <li><code class="highlighter-rouge">chief.lock(balance);</code></li>
+</ol>
+
+<p><a href="http://web.archive.org/web/20201107232510/https://etherscan.io/address/0x8e2a84d6ade1e7fffee039a35ef5f19f13057152#writeContract">Chief.lock via Etherscan</a></p>
+
+<h4 id="vote-for-any-roll-call-slate-that-includes-address-0x0-as-a-candidate"><code class="highlighter-rouge">vote</code> for any roll call slate that includes address <code class="highlighter-rouge">0x0</code> as a candidate</h4>
+
+<ol>
+  <li><code class="highlighter-rouge">chief.vote(rollCallSlate)</code>;</li>
+</ol>
+
+<p>If you don’t have a particular other proposal you want to support, you can use the existing ID for <code class="highlighter-rouge">[0x0]</code></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rollCallSlate == 0x290decd9548b62a8d60345a988386fc84ba6bc95484008f6362f93160ef3e563
+              == etch([0x0])
+</code></pre></div></div>
+
+<p>you can verify this with <code class="highlighter-rouge">chief.slates(rollCallSlate, 0);</code> and <code class="highlighter-rouge">chief.slates(rollCallSlate, 1)</code></p>
+
+<p><a href="http://web.archive.org/web/20201107232510/https://etherscan.io/address/0x8e2a84d6ade1e7fffee039a35ef5f19f13057152#writeContract">Chief.vote via Etherscan</a></p>
+
+<p><a href="http://web.archive.org/web/20201107232510/https://etherscan.io/address/0x8e2a84d6ade1e7fffee039a35ef5f19f13057152#readContract">Chief.slates via Etherscan</a></p>
+
+<h4 id="if-you-want-to-change-your-vote">If you want to change your vote</h4>
+
+<ol>
+  <li><code class="highlighter-rouge">vote(different-slate)</code>.</li>
+</ol>
+
+<p>Create a new slate with <code class="highlighter-rouge">etch([candidate1, candidate2])</code>, up to 5 candidates. Make sure your list of candidates is lexically ordered and has no repeating candidates, otherwise the contract will reject it.</p>
+
+<p><a href="http://web.archive.org/web/20201107232510/https://etherscan.io/address/0x8e2a84d6ade1e7fffee039a35ef5f19f13057152#writeContract">Chief.vote, Chief.etch via Etherscan</a></p>
+
+<h4 id="when-it-comes-time-to-move-your-mkr">When it comes time to move your MKR</h4>
+
+<ol>
+  <li><code class="highlighter-rouge">chief.free(amount)</code>.</li>
+</ol>
+
+<p>Don’t worry about re-voting, everything is automatically adjusted.</p>
+
+<p><a href="http://web.archive.org/web/20201107232510/https://etherscan.io/address/0x8e2a84d6ade1e7fffee039a35ef5f19f13057152#writeContract">Chief.free via Etherscan</a></p>
+
+<h2 id="contracts-referenced-in-this-guide">Contracts referenced in this guide:</h2>
+
+<h4 id="old-mkr-token">Old MKR Token</h4>
+
+<p><code class="highlighter-rouge">old_mkr := 0xc66ea802717bfb9833400264dd12c2bceaa34a6d</code></p>
+
+<p>Restritced ABI for <code class="highlighter-rouge">balanceOf</code>+<code class="highlighter-rouge">approve</code>:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[{"constant":true,"inputs":[{"name":"src","type":"address"}],"name":"balanceOf","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"guy","type":"address"},{"name":"wad","type":"uint256"}],"name":"approve","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"}]
+</code></pre></div></div>
+
+<h4 id="mkr-token">MKR Token</h4>
+
+<p><code class="highlighter-rouge">mkr := 0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2</code></p>
+
+<h4 id="redeemer">Redeemer</h4>
+
+<p><code class="highlighter-rouge">redeemer:= 0x642ae78fafbb8032da552d619ad43f1d81e4dd7c</code></p>
+
+<p>Restricted ABI for <code class="highlighter-rouge">redeem</code>:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[{"constant":false,"inputs":[],"name":"redeem","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"}]
+</code></pre></div></div>
+
+<h4 id="maker-chief-contract">Maker “chief” contract</h4>
+
+<p><code class="highlighter-rouge">chief := 0x8e2a84d6ade1e7fffee039a35ef5f19f13057152</code></p>
+
+<h4 id="iou-token">IOU Token</h4>
+
+<p><code class="highlighter-rouge">iou := 0x9aed7a25f2d928225e6fb2388055c7363ad6727b</code></p>
+
+<h4 id="roll-call-slate">Roll Call Slate</h4>
+
+<p><code class="highlighter-rouge">rollCallSlate</code> is a <code class="highlighter-rouge">bytes32</code>, not an address
+<code class="highlighter-rouge">rollCallSlate := 0x290decd9548b62a8d60345a988386fc84ba6bc95484008f6362f93160ef3e563</code></p>
+
+
+
+      
+    </div>
+    <script src="http://web.archive.org/web/20201107232510js_/https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+    
+  </body>
+</html>
+<!--
+     FILE ARCHIVED ON 23:25:10 Nov 07, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:18:33 Dec 17, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 5044.191
+  exclusion.robots: 0.139
+  exclusion.robots.policy: 0.127
+  cdx.remote: 0.091
+  esindex: 0.011
+  LoadShardBlock: 93.393 (3)
+  PetaboxLoader3.datanode: 83.207 (5)
+  CDXLines.iter: 14.072 (3)
+  load_resource: 81.589
+  PetaboxLoader3.resolve: 44.415
+  loaddict: 31.402
+-->

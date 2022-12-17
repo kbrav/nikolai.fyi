@@ -1,0 +1,253 @@
+@import url('http://web.archive.org/web/20221103123426cs_/https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600,700|Source+Sans+Pro:400,400i,700');
+
+html {
+  --purple: #F012BE;
+  --base: 28px;
+  font: 18px/var(--base) "Source Code Pro";
+  font-family: "Source Code Pro", mononoki, monospace;
+  background: linear-gradient(to bottom, #000 0%, #212 150vh);
+  color: ivory;
+}
+
+code, pre {
+  font-family: "Source Code Pro", mononoki, monospace;
+  line-height: var(--base);
+}
+
+code {
+  white-space: nowrap;
+}
+
+header img { margin: var(--base) 0 calc(2 * var(--base)) 0; }
+
+h1, h2, h3, h4 { margin: 0; }
+h1 { font-size: 180%; }
+h1 { line-height: calc(var(--base) * 2); margin-top: calc(6 * var(--base)); }
+h2 { line-height: calc(var(--base) * 2); margin-top: calc(2 * var(--base)); }
+h3 { line-height: calc(var(--base) * 2); margin-top: calc(2 * var(--base)); }
+h4 { line-height: calc(var(--base)); margin-top: var(--base); }
+
+h2 { font-size: 135%; }
+
+li { margin-bottom: calc(var(--base) / 4); padding-left: 1rem; }
+
+sub {
+  vertical-align: bottom;
+  line-height: 18px;
+  font-size: inherit;
+}
+
+body {
+  max-width: 42rem;
+  margin: 0 auto 12rem auto;
+}
+
+p { text-align: left; }
+center p { text-align: center !important; }
+
+.sc {
+  font-variant: small-caps;
+  font-size: 1.25em;
+  font-weight: bold;
+  color: var(--purple);
+}
+
+strong { font-weight: 600; }
+
+header {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header p { margin: 0; }
+.x1 { line-height: calc(var(--base) * 2); }
+.x2 { font-size: 1.25rem; line-height: calc(var(--base) * 1.25); font-weight: bold; margin-bottom: var(--base); }
+.x3 { margin: var(--base) 0; }
+.x4 { font-size: 1.5rem; line-height: calc(var(--base) * 2); font-weight: bold; }
+.x5 { line-height: var(--base); }
+.x6 { margin: calc(2 * var(--base)) 0; }
+.x7 { margin-top: var(--base); font-size: 0.8rem; }
+.x8 { margin-top: var(--base); font-size: 2rem; }
+
+comment {
+  font-family: "Source Sans Pro", helvetica, sans-serif;
+  opacity: 0.8;
+}
+
+comment * { font-weight: normal; }
+
+pre {
+  margin-left: 1.5rem;
+}
+
+math { font-family: serif; font-style: italic; }
+
+define { color: var(--purple); font-weight: 600; }
+
+a {
+  color: var(--purple);
+  text-decoration: none;
+}
+
+comment a {
+  pointer-events: none;
+  text-decoration: none;
+  color: currentcolor;
+  font-weight: normal;
+}
+
+declaration { opacity: 0.6; }
+
+pre p {
+  margin: .5rem 0;
+}
+
+pre p:last-child {
+  margin-bottom: 0;
+}
+
+pre {
+  font-size: 16px;
+  line-height: 23px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.03);
+  padding: .5rem;
+  margin-bottom: 1rem;
+}
+
+toc {
+  display: block;
+  margin-bottom: calc(2 * var(--base));
+  min-height: 100vh;
+}
+
+toc-entry {
+  display: block;
+}
+
+toc-n {
+  display: inline-block;
+  padding-right: 1rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.woah {
+  margin-top: 1rem;
+}
+
+todo {
+  display: block;
+  margin: 1rem 0;
+  text-align: center;
+  opacity: 0.7;
+}
+
+todo:before {
+  content: "[TODO: ";
+  font-weight: 600;
+}
+
+todo:after {
+  content: "]";
+}
+
+em {
+  font-style: normal;
+  font-weight: bold;
+}
+
+p > code, li > code {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.03);
+  padding: 0px 6px;
+  border-radius: 4px;
+}
+
+th, td {
+  padding: 0 .5rem;
+}
+
+a { position: relative; }
+popup {
+  display: block;
+  position: absolute;
+  background: white;
+  color: black;
+  width: 25em;
+  border-radius: .5rem;
+  left: 1.5rem;
+  bottom: 1rem;
+  padding: .25rem .5rem;
+  opacity: 0;
+  transition: .5s ease all;
+  z-index: 1;
+  font-family: "Source Sans Pro", helvetica, sans-serif;
+  font-size: 0.9rem;
+  line-height: calc(0.7 * var(--base));
+  font-style: normal;
+}
+
+popup span {
+  position: relative;
+  white-space: normal;
+}
+
+popup.show { opacity: 1; }
+popup:not(.show) { pointer-events: none; }
+
+popup code {
+  font-weight: bold;
+  font-size: 90%;
+  line-height: 1;
+}
+
+popup a { color: #333; }
+
+dl dt { display: none; }
+dl dd { margin-bottom: 1rem; }
+dl dd code:first-of-type { font-weight: bold; }
+
+aside {
+  margin-left: 1rem;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+figure {
+  white-space: pre;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.8rem;
+  margin: 0 0 calc(1 * var(--base)) 0;
+  display: flex;
+  justify-content: center;
+}
+
+figure, figure * {
+  line-height: 1.2rem;
+}
+/*
+     FILE ARCHIVED ON 12:34:26 Nov 03, 2022 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:17:56 Dec 17, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 3430.628
+  exclusion.robots: 0.112
+  exclusion.robots.policy: 0.103
+  RedisCDXSource: 9.324
+  esindex: 0.013
+  LoadShardBlock: 3402.969 (3)
+  PetaboxLoader3.datanode: 3545.592 (4)
+  CDXLines.iter: 15.137 (3)
+  load_resource: 1074.325
+  PetaboxLoader3.resolve: 655.657
+*/
